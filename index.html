@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>htdev-test</title>
+    <link rel="stylesheet" href="./libs/normalize.css" />
+    <link rel="stylesheet" href="./libs/swiper-9.0.2/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <script src="./libs/swiper-9.0.2/swiper-bundle.min.js" defer></script>
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <header class="header">
+        <div class="header__container container">
+          <div class="logo">
+            <img src="./images/logo.svg" alt="Логотип" class="logo__image" />
+          </div>
+        </div>
+      </header>
+      <div class="hero">
+        <div class="hero__container container">
+          <h1 class="hero__title">Conecom</h1>
+          <h2 class="hero__subtitle">российское подразделение французской группы DuffBeer</h2>
+        </div>
+        <div class="hero__decor"></div>
+      </div>
+
+      <main class="main">
+        <section class="info">
+          <div class="container">
+            <div class="info__wrapper">
+              <div class="info__video">
+                <iframe
+                  src="https://www.youtube.com/embed/AKeUssuu3Is?si=cEPDOgUpFoTfygfw"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="info__text">
+                <h2 class="info__title">
+                  167
+                  <span class="info__title-description"> лет нашего опыта </span>
+                </h2>
+
+                <p class="info__description">
+                  DuffBeer — один из мировых лидеров по производству дрожжей и других продуктов
+                  ферментации. И нам нужна сильная команда профессионалов и единомышленников,
+                  которые будут стремиться развиваться вместе с DuffBeer.
+                </p>
+                <p class="info__description">
+                  Мы всегда рады принять талантливых и целеустремленных людей в нашу дружную
+                  команду! Мы ценим каждого своего сотрудника и стремимся предоставить всем равные
+                  возможности в развитии и совершенств.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="note">
+          <div class="container">
+            <div class="note__wrapper">
+              <button class="btn note__btn"></button>
+              <h2 class="note__text">
+                Каждое 3-е хлебобулочное изделие в мире произведено с использованием продукции
+                DuffBeer
+              </h2>
+              <div class="note__decor"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="slogan">
+          <div class="container">
+            <div class="slogan__title-wrap">
+              <h2 class="slogan__title">МИССИЯ DuffBeer</h2>
+            </div>
+            <p class="slogan__description">
+              работать вместе, что бы лучше накормить и&nbsp;сохранить планету
+            </p>
+            <a href="#" class="goto-link" target="_blank">Перейти на сайт</a>
+          </div>
+        </section>
+
+        <section class="advantages">
+          <div class="container">
+            <h2 class="section-title">Наши преимущества</h2>
+            <div class="advantages__slider-wrap">
+              <div class="swiper advantages__slider" data-mobile="false">
+                <ul class="advantages__list swiper-wrapper">
+                  <li class="advantages__item swiper-slide">
+                    <picture>
+                      <source media="(min-width: 1250px)" srcset="./images/advantages/adv-1.jpg" />
+                      <source media="(min-width: 930px)" srcset="./images/advantages/adv-1-m.jpg" />
+                      <source media="(min-width: 610px)" srcset="./images/advantages/adv-1-s.jpg" />
+                      <source
+                        media="(min-width: 200px)"
+                        srcset="./images/advantages/adv-1-xs.jpg"
+                      />
+                      <img
+                        src="./images/advantages/adv-1.jpg"
+                        alt="Прогулка"
+                        class="advantages__item-img"
+                      />
+                    </picture>
+                    <div class="advantages__text-block">
+                      <p class="advantages__item-description">Уверенность в завтрашнем дне</p>
+                      <button class="btn advantages__item-btn"></button>
+                      <div class="advantages__more">
+                        <p class="advantages__more-text">
+                          ООО «Conecom», российское подразделение французского концерна Lesaffre. Мы
+                          компания, которая честно ведет свой бизнес на территории РФ, соблюдая
+                          законодательство и гарантируя стабильность и уверенность в завтрашнем дне.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="advantages__item swiper-slide">
+                    <picture>
+                      <source srcset="./images/advantages/adv-2.jpg" media="(min-width: 1250px)" />
+                      <source srcset="./images/advantages/adv-2-m.jpg" media="(min-width: 200px)" />
+                      <img
+                        src="./images/advantages/adv-2.jpg"
+                        alt="Работник"
+                        class="advantages__item-img"
+                      />
+                    </picture>
+                    <div class="advantages__text-block">
+                      <p class="advantages__item-description">
+                        Безопасность на рабочем месте – приоритет №1
+                      </p>
+                      <button class="btn advantages__item-btn"></button>
+                      <div class="advantages__more">
+                        <p class="advantages__more-text">
+                          Вопросам безопасности и качества пищевой продукции в нашей компании
+                          уделяется повышенное внимание. Все производства группы DuffBeer в России
+                          постоянно работают над улучшением процессов и стремятся сделать все
+                          возможное, чтобы рабочий процесс был максимально безопасным и комфортным.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="advantages__item swiper-slide">
+                    <picture>
+                      <source media="(min-width: 1250px)" srcset="./images/advantages/adv-3.jpg" />
+                      <source media="(min-width: 200px)" srcset="./images/advantages/adv-3-m.jpg" />
+                      <img
+                        src="./images/advantages/adv-3.jpg"
+                        alt="Мужчина"
+                        class="advantages__item-img"
+                      />
+                    </picture>
+                    <div class="advantages__text-block">
+                      <p class="advantages__item-description">Стабильная заработная плата</p>
+                      <button class="btn advantages__item-btn"></button>
+                      <div class="advantages__more">
+                        <p class="advantages__more-text">
+                          Мы обеспечиваем нашим сотрудникам стабильную заработную плату в
+                          соответствии с рынком региона. Средний стаж работы в нашей компании – 7
+                          лет.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="advantages__item swiper-slide">
+                    <picture>
+                      <source media="(min-width: 1250px)" srcset="./images/advantages/adv-4.jpg" />
+                      <source media="(min-width: 200px)" srcset="./images/advantages/adv-4-m.jpg" />
+                      <img
+                        src="./images/advantages/adv-4.jpg"
+                        alt="Медосмотр"
+                        class="advantages__item-img"
+                      />
+                    </picture>
+                    <div class="advantages__text-block">
+                      <p class="advantages__item-description">Заботимся о здоровье сотрудников</p>
+                      <button class="btn advantages__item-btn"></button>
+                      <div class="advantages__more">
+                        <p class="advantages__more-text">
+                          Каждый сотрудник в нашей компании обеспечен полисом добровольного
+                          медицинского страхования. Кроме того, на каждом заводе есть медицинский
+                          пункт для сотрудников. Осуществляется страхование от несчастных случаев с
+                          первого дня работы.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="advantages__item swiper-slide">
+                    <picture>
+                      <source media="(min-width: 1250px)" srcset="./images/advantages/adv-5.jpg" />
+                      <source media="(min-width: 200px)" srcset="./images/advantages/adv-5-m.jpg" />
+                      <img
+                        src="./images/advantages/adv-5.jpg"
+                        alt="Производство"
+                        class="advantages__item-img"
+                      />
+                    </picture>
+                    <div class="advantages__text-block">
+                      <p class="advantages__item-description">
+                        Предоставление удобной спецодежды и СИЗ для производственного персонала
+                      </p>
+                      <button class="btn advantages__item-btn"></button>
+                      <div class="advantages__more">
+                        <p class="advantages__more-text">
+                          Мы предоставляем удобные СИЗ и спецодежду и в случае износа или порчи
+                          обмениваются на новые.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="advantages__item swiper-slide">
+                    <picture>
+                      <source media="(max-width: 1250px)" srcset="./images/advantages/adv-6.jpg" />
+                      <source media="(min-width: 200px)" srcset="./images/advantages/adv-6-m.jpg" />
+                      <img
+                        src="./images/advantages/adv-6.jpg"
+                        alt="Учебный класс"
+                        class="advantages__item-img"
+                      />
+                    </picture>
+                    <div class="advantages__text-block">
+                      <p class="advantages__item-description">
+                        Обучение: различные программы обучения и профессиональные тренинги
+                      </p>
+                      <button class="btn advantages__item-btn"></button>
+                      <div class="advantages__more">
+                        <p class="advantages__more-text">
+                          Мы уделяем много внимания развитию наших сотрудников. В компании работает
+                          Внутренний центр обучений и ежегодно проводится большое количество
+                          обучающих мероприятий как локально на заводах, так и в головном офисе
+                          DuffBeer во Франции.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="advantages__item swiper-slide">
+                    <picture>
+                      <source media="(min-width: 1250px)" srcset="./images/advantages/adv-7.jpg" />
+                      <source media="(max-width: 200px)" srcset="./images/advantages/adv-7-m.jpg" />
+                      <img
+                        src="./images/advantages/adv-7.jpg"
+                        alt="Пикник"
+                        class="advantages__item-img"
+                      />
+                    </picture>
+                    <div class="advantages__text-block">
+                      <p class="advantages__item-description">
+                        Возможности для реализации творческого потенциала
+                      </p>
+                      <button class="btn advantages__item-btn"></button>
+                      <div class="advantages__more">
+                        <p class="advantages__more-text">
+                          Мы ставим перед собой амбициозные и интересные цели, а реализация задач
+                          является командной работой сотрудников из различных подразделений. Мы
+                          также принимаем активное участие в работе над кросс-функциональными
+                          проектам с коллегами из других стран присутствия DuffBeer.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="advantages__item swiper-slide">
+                    <picture>
+                      <source media="(max-width: 1250px)" srcset="./images/advantages/adv-8.jpg" />
+                      <source media="(max-width: 200px)" srcset="./images/advantages/adv-8-m.jpg" />
+                      <img
+                        src="./images/advantages/adv-8.jpg"
+                        alt="Утренник"
+                        class="advantages__item-img"
+                      />
+                    </picture>
+                    <div class="advantages__text-block">
+                      <p class="advantages__item-description">
+                        Мы - семейная компания и любим проводить время вместе
+                      </p>
+                      <button class="btn advantages__item-btn"></button>
+                      <div class="advantages__more">
+                        <p class="advantages__more-text">
+                          Ежегодно мы проводим корпоративные мероприятия не только для наших
+                          сотрудников, но и для семей наших сотрудников. А корпоративные подарки для
+                          детей сотрудников – наша добрая предновогодняя традиция.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="advantages__item swiper-slide">
+                    <picture>
+                      <source media="(max-width: 1250px)" srcset="./images/advantages/adv-9.jpg" />
+                      <source media="(max-width: 200px)" srcset="./images/advantages/adv-9-m.jpg" />
+                      <img
+                        src="./images/advantages/adv-9.jpg"
+                        alt="Уход за растениями"
+                        class="advantages__item-img"
+                      />
+                    </picture>
+                    <div class="advantages__text-block">
+                      <p class="advantages__item-description">
+                        Мы - социально ответственная компания и заботимся об окружающих
+                      </p>
+                      <button class="btn advantages__item-btn"></button>
+                      <div class="advantages__more">
+                        <p class="advantages__more-text">
+                          Наша миссия лежит в основе социально-корпоративной ответственности. Мы
+                          ведем свою деятельность в соответствии с тремя основными правилами: мы
+                          заботимся о людях; наша деятельность устойчива по своей природе; мы
+                          заботимся об окружающей среде
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="swiper-button-prev swiper-button-prev--advantages"></div>
+              <div class="swiper-button-next swiper-button-next--advantages"></div>
+              <div class="swiper-pagination swiper-pagination--advantages"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="presentation">
+          <div class="container">
+            <div class="presentation__decor-up"></div>
+            <div class="presentation__decor-center"></div>
+            <h2 class="section-title section-title--presentation section-title--uppercase">
+              DUFFBEER
+            </h2>
+            <h3 class="presentation__subtitle">Ключевой мировой игрок в области ферментации</h3>
+
+            <div class="presentation__item">
+              <div class="presentation__img-block">
+                <picture>
+                  <source srcset="./images/duffbeer/dub-1.jpg" media="(min-width: 1250px)" />
+                  <source srcset="./images/duffbeer/dub-1-m.jpg" media="(min-width: 930px)" />
+                  <source srcset="./images/duffbeer/dub-1-s.jpg" media="(min-width: 610px)" />
+                  <source srcset="./images/duffbeer/dub-1-xs.jpg" media="(min-width: 200px)" />
+                  <img
+                    src="./images/duffbeer/dub-1.jpg"
+                    alt="Совещание"
+                    class="presentation__img"
+                  />
+                </picture>
+
+                <p class="presentation__description">10 700+ сотрудников</p>
+              </div>
+              <div class="presentation__desc-block">
+                <picture>
+                  <img
+                    src="./images/duffbeer/dub-2.jpg"
+                    alt="Совещание"
+                    class="presentation__img"
+                  />
+                </picture>
+                <p
+                  class="presentation__desc-block-description presentation__desc-block-description--left"
+                >
+                  570 экспертов R&D
+                </p>
+              </div>
+            </div>
+            <!-- /presentation__item -->
+
+            <div class="presentation__item presentation__item--reverse">
+              <div class="presentation__img-block presentation__img-block--reverse">
+                <picture>
+                  <source srcset="./images/duffbeer/dub-3.jpg" media="(max-width: 1250px)" />
+                  <source srcset="./images/duffbeer/dub-3-m.jpg" media="(max-width: 930px)" />
+                  <img src="./images/duffbeer/dub-3.jpg" alt="Поле" class="presentation__img" />
+                </picture>
+                <p class="presentation__description presentation__description--left">
+                  25+ лет в России
+                </p>
+              </div>
+              <div class="presentation__desc-block presentation__desc-block--reverse">
+                <div class="presentation__numbers">167</div>
+                <p class="presentation__desc-block-description">лет опыта на рынке хлебопечения</p>
+              </div>
+            </div>
+            <!-- /presentation__item -->
+
+            <div class="presentation__item">
+              <div class="presentation__img-block">
+                <picture>
+                  <source srcset="./images/duffbeer/dub-4.jpg" media="(min-width: 1250px)" />
+                  <source srcset="./images/duffbeer/dub-4-m.jpg" media="(min-width: 200px)" />
+                  <img src="./images/duffbeer/dub-4.jpg" alt="Фабрика" class="presentation__img" />
+                </picture>
+                <p class="presentation__description">Филиалы в 50 странах</p>
+              </div>
+              <div class="presentation__desc-block">
+                <div class="presentation__numbers">4</div>
+                <p class="presentation__desc-block-description">направления деятельности</p>
+              </div>
+            </div>
+            <!-- /presentation__item -->
+
+            <div class="presentation-slider">
+              <div class="swiper swiper--presentation">
+                <div class="swiper-wrapper swiper-wrapper--presentation">
+                  <div class="swiper-slide swiper-slide--presentation presentation-slider__item">
+                    <div class="presentation__img-block">
+                      <picture>
+                        <source media="(min-width: 1250px)" srcset="./images/duffbeer/dub-1.jpg" />
+                        <source media="(min-width: 930px)" srcset="./images/duffbeer/dub-1-m.jpg" />
+                        <source media="(min-width: 610px)" srcset="./images/duffbeer/dub-1-s.jpg" />
+                        <source
+                          media="(min-width: 200px)"
+                          srcset="./images/duffbeer/dub-1-xs.jpg"
+                        />
+                        <img
+                          src="./images/duffbeer/dub-1.jpg"
+                          alt="Совещание"
+                          class="presentation__img"
+                        />
+                      </picture>
+                      <p class="presentation__description">10 700+ сотрудников</p>
+                    </div>
+                  </div>
+                  <!-- /swiper-slide -->
+                  <div class="swiper-slide swiper-slide--presentation presentation__desc-block">
+                    <picture>
+                      <img
+                        src="./images/duffbeer/dub-2.jpg"
+                        alt="Исследование"
+                        class="presentation__img"
+                      />
+                    </picture>
+                    <p
+                      class="presentation__desc-block-description presentation__desc-block-description--left"
+                    >
+                      570 экспертов R&D
+                    </p>
+                  </div>
+                  <!-- /swiper-slide -->
+                  <div class="swiper-slide swiper-slide--presentation presentation__img-block">
+                    <picture>
+                      <source srcset="./images/duffbeer/dub-3.jpg" media="(min-width: 1250px)" />
+                      <source srcset="./images/duffbeer/dub-3-m.jpg" media="(min-width: 930px)" />
+                      <img src="./images/duffbeer/dub-3.jpg" alt="Поле" class="presentation__img" />
+                    </picture>
+                    <p class="presentation__description">25+ лет в Росии</p>
+                  </div>
+                  <!-- /swiper-slide -->
+
+                  <div class="swiper-slide swiper-slide--presentation presentation__desc-block">
+                    <div class="presentation__numbers">167</div>
+                    <p class="presentation__desc-block-description">
+                      лет опыта на рынке хлебопечения
+                    </p>
+                  </div>
+                  <!-- /swiper-slide -->
+
+                  <div class="swiper-slide swiper-slide--presentation presentation__img-block">
+                    <picture>
+                      <source srcset="./images/duffbeer/dub-4.jpg" media="(min-width: 1250px)" />
+                      <source srcset="./images/duffbeer/dub-4-m.jpg" media="(min-width: 930px)" />
+                      <img
+                        src="./images/duffbeer/dub-4.jpg"
+                        alt="Фабрика"
+                        class="presentation__img"
+                      />
+                    </picture>
+                    <p class="presentation__description">25+ лет в Росии</p>
+                  </div>
+                  <!-- /swiper-slide -->
+
+                  <div class="swiper-slide swiper-slide--presentation presentation__desc-block">
+                    <div class="presentation__numbers">4</div>
+                    <p class="presentation__desc-block-description">направления деятельности</p>
+                  </div>
+                  <!-- /swiper-slide -->
+                </div>
+              </div>
+              <div class="swiper-pagination swiper-pagination--presentation"></div>
+
+              <div class="swiper-button-prev swiper-button-prev--presentation"></div>
+              <div class="swiper-button-next swiper-button-next--presentation"></div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
